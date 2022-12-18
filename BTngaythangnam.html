@@ -1,0 +1,24 @@
+<html>
+
+<head></head>
+
+<body>
+    <h3>hiển thị ngày tháng năm</h3>
+    Năm : <input type="number" id="nam"><br><br>
+    Tháng : <input type="number" id="thang"><br><br>
+    Ngày : <input type="number" id="ngay"><br><br>
+    <button type="button" onclick="xulyhienthi()">Click</button>
+    <div id="dd_mm_yyyy" style="font-size: 50px;color: blue;"></div>
+    <script>
+        function xulyhienthi() {
+            let Nam = document.getElementById("nam").value;
+            let Thang = document.getElementById("thang").value;
+            let Ngay = document.getElementById("ngay").value;
+            let ketqua = Ngay + "-" + Thang + "-" + Nam;
+            document.getElementById("dd_mm_yyyy").innerHTML = ketqua;
+        }
+
+    </script>
+</body>
+
+</html>
