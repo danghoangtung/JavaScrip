@@ -8,6 +8,7 @@
     Bán Kính : <input type="number" id="bankinh"><br><br>
     <button type="button" onclick="tinhchuvi()">Tính Chu Vi</button>
     <button type="button" onclick="tinhdientich()">Tính diện tích</button>
+    <button type="button" onclick="tinhduongkinh()">Tính dường kính</button>
     <script>
         function tinhchuvi() {
             let R = document.getElementById("bankinh").value;
@@ -20,6 +21,11 @@
             let P = Math.PI;
             let S = R * R * P;
             alert(` Diện tích Là=${S}`);
+        }
+        function tinhduongkinh() {
+            let R = document.getElementById("bankinh").value;
+            let D = R * 2;
+            alert(` Đường kính = ${D}`)
         }
     </script>
 </body>
