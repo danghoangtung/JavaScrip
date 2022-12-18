@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        let A, B;
+        A = parseInt(prompt("số tự nhiên A"));
+        B = parseInt(prompt("số tự nhiên B"));
+        let C = A % B;
+        let thongBao = '';
+        if (C === 0) {
+            thongBao += `${A} là bội số của ${B}`;
+        } else {
+            thongBao += `${A} không phải là bội số của ${B}`;
+        }
+        alert(thongBao)
+    </script>
+</body>
+
+</html>
